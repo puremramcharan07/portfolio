@@ -2576,3 +2576,54 @@ body::after {
 .nav-links a.active::after {
     width: 100%;
 }
+
+/* =========================
+   CARD POP-UP HOVER EFFECT
+   ========================= */
+
+.project-card,
+.skill-card,
+.education-card,
+.certificate-card,
+.achievement-card,
+.service-card,
+.contact-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+/* Mouse hover */
+.project-card:hover,
+.skill-card:hover,
+.education-card:hover,
+.certificate-card:hover,
+.achievement-card:hover,
+.service-card:hover,
+.contact-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Mobile touch effect */
+.project-card:active,
+.skill-card:active,
+.education-card:active,
+.certificate-card:active,
+.achievement-card:active,
+.service-card:active,
+.contact-card:active {
+    transform: translateY(-6px) !important;
+}
+
+
+.tech-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+.tech-card:active {
+    transform: translateY(-6px) !important;
+}
