@@ -1249,9 +1249,9 @@ body {
     }
 }
 
-
-/* Projects Section */
-
+/* =========================================================
+   PROJECTS SECTION
+========================================================= */
 
 .projects-container {
     max-width: 1000px;
@@ -1270,43 +1270,54 @@ body {
 }
 
 
-/* Project Card */
+/* =========================================================
+   PROJECT CARD
+========================================================= */
 
 .project-card {
     background: #111827;
 
-    padding: 28px;
-
-    border-radius: 12px;
-
-    text-align: left;
-
     border: 1px solid #1e3a5f;
+    border-radius: 15px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
 
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
 }
 
 
-/* Card Hover */
+/* =========================================================
+   CARD HOVER
+========================================================= */
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+
+    border-color: #2563eb;
 
     box-shadow:
-        0 10px 25px rgba(37, 99, 235, 0.25);
+        0 0 25px rgba(37, 99, 235, 0.35);
 }
 
 
-/* Top Area */
+/* =========================================================
+   PROJECT TOP
+========================================================= */
 
 .project-top {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 15px;
@@ -1315,31 +1326,42 @@ body {
 }
 
 
-/* Project Icon */
+/* =========================================================
+   PROJECT ICON
+========================================================= */
 
 .project-icon {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #1e3a5f;
+
+    border: 1px solid #2563eb;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    font-size: 35px;
-
-    background: #1e3a8a;
-
-    border: 1px solid #2563eb;
-
-    border-radius: 12px;
+    font-size: 30px;
 
     box-shadow:
         0 0 15px rgba(37, 99, 235, 0.25);
 }
 
+.project-icon i {
+    font-size: 28px;
+    color: #60a5fa;
+}
 
-/* Project Type */
+
+/* =========================================================
+   PROJECT TYPE
+========================================================= */
 
 .project-type {
     background: #172554;
@@ -1358,34 +1380,47 @@ body {
 }
 
 
-/* Project Name */
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
 
+.project-card h2,
 .project-card h3 {
     color: #60a5fa;
 
-    font-size: 25px;
+    font-size: 22px;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 
-/* Project Description */
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
 
 .project-card p {
     color: #d1d5db;
 
     font-size: 15px;
 
-    line-height: 1.6;
+    line-height: 1.7;
 
     margin-bottom: 20px;
 }
 
 
-/* Technology Tags */
+/* =========================================================
+   TECHNOLOGY TAGS
+========================================================= */
 
-.project-tech {
+.project-tech,
+.tech-stack,
+.technologies {
     display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
     flex-wrap: wrap;
 
@@ -1394,31 +1429,153 @@ body {
     margin-bottom: 25px;
 }
 
-.project-tech span {
-    background: #172554;
 
-    color: #60a5fa;
+.project-tech span,
+.tech-stack span,
+.technologies span {
+    background: #1e293b;
 
-    padding: 6px 11px;
+    color: #93c5fd;
 
-    border-radius: 15px;
+    border: 1px solid #2563eb;
 
-    font-size: 12px;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
 
     font-weight: 600;
 }
 
 
-/* View Project Button */
+/* =========================================================
+   PROJECT BUTTON CONTAINER
+========================================================= */
+
+.project-links {
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 12px !important;
+
+    flex-wrap: wrap !important;
+
+    margin-top: 5px !important;
+}
+
+
+/* =========================================================
+   GITHUB + LIVE DEMO BUTTONS
+========================================================= */
+
+.project-links a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 110px !important;
+
+    min-width: 110px !important;
+
+    height: 42px !important;
+
+    padding: 0 15px !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    background: #2563eb !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #2563eb !important;
+
+    border-radius: 8px !important;
+
+    text-decoration: none !important;
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    transition:
+        all 0.3s ease !important;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.project-links a:hover {
+    background: #60a5fa !important;
+
+    color: #0f172a !important;
+
+    border-color: #60a5fa !important;
+
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.3) !important;
+}
+
+
+/* =========================================================
+   BUTTON ICONS
+========================================================= */
+
+.project-links a i {
+    margin-right: 7px !important;
+
+    font-size: 15px !important;
+}
+
+
+/* =========================================================
+   LIVE DEMO BUTTON
+========================================================= */
+
+.project-links a.live-demo {
+    background: #2563eb !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #2563eb !important;
+}
+
+
+.project-links a.live-demo:hover {
+    background: #60a5fa !important;
+
+    color: #0f172a !important;
+
+    border-color: #60a5fa !important;
+}
+
+
+/* =========================================================
+   OLD PROJECT BUTTON
+========================================================= */
 
 .project-btn {
-    display: inline-block;
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
 
     padding: 10px 18px;
 
     background: #2563eb;
 
-    color: white;
+    color: #ffffff;
 
     text-decoration: none;
 
@@ -1431,141 +1588,135 @@ body {
     transition: 0.25s ease;
 }
 
+
 .project-btn:hover {
     background: #1d4ed8;
 
     transform: translateY(-2px);
 }
 
-/* PROJECTS SECTION ANIMATION */
+
+/* =========================================================
+   PROJECT CARD REVEAL ANIMATION
+========================================================= */
 
 .project-card.reveal {
     opacity: 0;
+
     transform: translateX(80px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
+
 
 .project-card.reveal.show {
     opacity: 1;
+
     transform: translateX(0);
 }
 
-/* Technologies */
 
-.technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-.technologies span {
-    background: #e5e7eb;
-    padding: 6px 10px;
-    border-radius: 5px;
-    font-size: 13px;
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 25px 20px;
+    }
+
+    .project-top {
+        margin-bottom: 20px;
+    }
+
+    .project-links {
+        gap: 10px !important;
+    }
+
+    .project-links a {
+        width: 110px !important;
+        min-width: 110px !important;
+    }
+
 }
 
-/* =========================
-   PORTFOLIO PROJECT CARD
-========================= */
 
-.project-card {
-    background: #111827;
-    border: 1px solid #1e3a5f;
-    border-radius: 15px;
-    padding: 30px 25px;
-    text-align: center;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
+/* =========================================================
+   ATM SIMULATION - BUTTON FIX
+========================================================= */
+
+/* ATM GitHub + Live Demo */
+a[href*="atm-python-project"] {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 110px !important;
+    min-width: 110px !important;
+    height: 42px !important;
+
+    padding: 0 15px !important;
+    margin: 0 5px !important;
+
+    box-sizing: border-box !important;
+
+    background: #2563eb !important;
+    color: #ffffff !important;
+
+    border: 1px solid #2563eb !important;
+    border-radius: 8px !important;
+
+    text-decoration: none !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    transition: all 0.3s ease !important;
 }
 
-/* Hover Effect */
-.project-card:hover {
-    transform: translateY(-10px);
-    border-color: #2563eb;
-    box-shadow: 0 0 25px rgba(37, 99, 235, 0.35);
+
+/* ATM buttons hover */
+a[href*="atm-python-project"]:hover {
+    background: #60a5fa !important;
+    color: #0f172a !important;
+
+    border-color: #60a5fa !important;
+
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.3) !important;
 }
 
-/* Project Icon */
-.project-icon {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    background: #1e3a5f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.project-icon i {
-    font-size: 28px;
-    color: #60a5fa;
+/* ATM button icons */
+a[href*="atm-python-project"] i {
+    margin-right: 7px !important;
+    font-size: 15px !important;
 }
-
-/* Project Title */
-.project-card h2 {
-    color: #60a5fa;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-/* Project Description */
-.project-card p {
-    color: #d1d5db;
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-/* Technology Tags */
-.tech-stack {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 25px;
-}
-
-.tech-stack span {
-    background: #1e293b;
-    color: #93c5fd;
-    border: 1px solid #2563eb;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 13px;
-}
-
-/* Project Buttons */
-.project-links {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.project-links a {
-    text-decoration: none;
-    color: white;
-    background: #2563eb;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.project-links a:hover {
-    background: #60a5fa;
-    color: #0f172a;
-    transform: translateY(-3px);
-}
-
-.project-links i {
-    margin-right: 6px;
-}
-
 
 /* =========================
    CERTIFICATIONS
